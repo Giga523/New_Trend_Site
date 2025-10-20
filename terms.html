@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" style="--secondary-color: #4fd1c7;">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הלוט היומי - תנאי שימוש</title>
+    <style>
+        /* Existing CSS from the landing page, copied for consistency */
+        body {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #2d3748;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 253, 250, 0.95) 100%);
+            backdrop-filter: blur(15px);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(79, 209, 199, 0.15);
+            border-bottom: 1px solid rgba(79, 209, 199, 0.2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4fd1c7, #06b6d4, #3b82f6, #8b5cf6);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: logoGradient 3s ease infinite;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes logoGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background-size: 200% 200%;
+            color: white;
+            padding: 12px 24px; /* Slightly adjusted padding for header button */
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            background: #f8fafc;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #4fd1c7;
+        }
+
+        /* --- New styles for T&C content page --- */
+        .terms-page {
+            padding: 100px 0 80px; /* Adjust padding for fixed header */
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            min-height: 100vh;
+        }
+
+        .terms-page h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #1e293b;
+            border-bottom: 3px solid var(--secondary-color, #4fd1c7);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .terms-page h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #334155;
+            padding-right: 10px;
+            border-right: 4px solid var(--secondary-color, #4fd1c7);
+        }
+
+        .terms-page p, .terms-page ul {
+            margin-bottom: 20px;
+            color: #475569;
+            font-size: 1rem;
+        }
+
+        .terms-page ul {
+            list-style: none;
+            padding-right: 20px;
+        }
+
+        .terms-page ul li::before {
+            content: "•";
+            color: var(--secondary-color, #4fd1c7);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+            margin-left: 10px;
+        }
+
+        .disclaimer {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #f093fb;
+            background-color: #fef0fd;
+            border-radius: 8px;
+            color: #9c0f99;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+<body style="font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(248, 255, 254) 100%); color: rgb(30, 41, 59);">
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                הלוט היומי 🛍️
+            </div>
+            <a href="index.html" class="cta-button" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105);">
+                <span>חזרה לדף הבית</span> 
+                <span>🏠</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="terms-page">
+            <div class="container">
+                <h1>תנאי שימוש עבור "הלוט היומי"</h1>
+                <p><strong>ברוכים הבאים ל"הלוט היומי".</strong> השימוש באתר זה ובשירותי קבוצת הווטסאפ שלנו כפוף להסכמה מלאה שלכם לתנאי השימוש המפורטים להלן. אם אינכם מסכימים לתנאים אלו, אינכם רשאים להשתמש בשירות.</p>
+                <p>תנאי השימוש כתובים בלשון זכר מטעמי נוחות בלבד, והם מתייחסים לשני המינים באופן שווה.</p>
+
+                <h2>1. מהות השירות</h2>
+                <p><strong>"הלוט היומי"</strong> (להלן: "האתר" או "השירות") הוא פלטפורמה המציעה המלצות, סקירות, וקישורים לרכישת מוצרים טרנדיים, בעיקר מאתר AliExpress. השירות ניתן באמצעות דף נחיתה זה וקבוצות WhatsApp ייעודיות.</p>
+                <ul>
+                    <li>השירות הינו שירות **מידע והמלצות** בלבד.</li>
+                    <li>הקישורים למוצרים עשויים להיות **קישורי שותפים (Affiliate Links)**, שמשמעותם היא שאנו עשויים לקבל עמלה על רכישות שתבוצענה דרכם, מבלי שעלות המוצר עבורכם תשתנה.</li>
+                </ul>
+
+                <h2>2. הצטרפות לקבוצת WhatsApp</h2>
+                <p>הצטרפות לקבוצות הווטסאפ של "הלוט היומי" היא **מרצון חופשי** ומאפשרת קבלת עדכונים וקישורים ישירות למכשירכם. בכך שאתם מצטרפים, אתם מאשרים:</p>
+                <ul>
+                    <li>אתם מבינים שהמידע המשותף נוגע למוצרי צריכה הנמכרים על ידי צדדים שלישיים (כגון AliExpress).</li>
+                    <li>אתם מסכימים לקבל הודעות תכופות, כולל קישורים מסחריים, במסגרת הקבוצה.</li>
+                    <li>האחריות על עמידה בכללי קבוצת הווטסאפ (אם קיימים) היא עליכם.</li>
+                </ul>
+
+                <h2>3. אחריות ורכישות</h2>
+                <p class="disclaimer">
+                    ⚠️ **הבהרה חשובה:** האתר והשירות אינם מוכרים את המוצרים המומלצים. הרכישה מתבצעת ישירות מול אתר צד שלישי (כגון AliExpress).
+                </p>
+                <ul>
+                    <li><strong>אחריות המוצרים:</strong> "הלוט היומי" אינו אחראי לאיכות המוצרים, טיבם, זמני האספקה, מדיניות ההחזרות או כל עניין אחר הקשור לרכישה או למוצר עצמו. כל טענה או שאלה בנוגע למוצר יש להפנות ישירות למוכר (בדרך כלל דרך AliExpress).</li>
+                    <li><strong>מחירים וזמינות:</strong> המחירים והזמינות של המוצרים המפורסמים עשויים להשתנות בכל רגע וללא הודעה מוקדמת.</li>
+                    <li><strong>סיכון:</strong> השימוש בקישורים והרכישה נעשים על אחריות המשתמש בלבד.</li>
+                </ul>
+
+                <h2>4. קניין רוחני</h2>
+                <p>כל התוכן המופיע באתר, כולל שם האתר ("הלוט היומי"), הלוגו, העיצוב הגרפי, המלל והקוד, הוא קניינה הבלעדי של מפעילת האתר ו/או צדדים שלישיים שהתירו את השימוש. אין להעתיק, לשכפל, להפיץ, למכור או לעשות שימוש מסחרי כלשהו בתוכן זה ללא הסכמה מפורשת מראש ובכתב.</p>
+
+                <h2>5. הגבלת אחריות</h2>
+                <p>השימוש באתר ובקבוצות הווטסאפ הוא **As-Is** (כמות שהוא). מפעילת האתר לא תהיה אחראית לכל נזק, ישיר או עקיף, שייגרם למשתמש או לצד שלישי כתוצאה מהשימוש בשירות או הסתמכות על המידע המפורסם בו.</p>
+
+                <h2>6. שינויים בתנאי השימוש</h2>
+                <p>"הלוט היומי" שומרת לעצמה את הזכות לשנות את תנאי השימוש מעת לעת, לפי שיקול דעתה הבלעדי. כל שינוי ייכנס לתוקף מיד עם פרסומו בדף זה. המשך השימוש בשירות לאחר פרסום שינוי מהווה הסכמה לתנאים החדשים.</p>
+                
+                <h2>7. פרטי יצירת קשר</h2>
+                <p>לשאלות, בירורים או תלונות בנוגע לתנאי שימוש אלו, אנא פנו אלינו דרך ערוצי התקשורת המפורסמים בדף הבית.</p>
+                
+                <p style="text-align: center; margin-top: 50px; font-style: italic; color: #64748b;">
+                    עדכון אחרון: אוקטובר 2025.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">דף הבית</a> 
+                <a href="privacy.html">מדיניות פרטיות</a> 
+                <a href="/terms.html">תנאי שימוש</a> <a href="/contact.html">צור קשר</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Placeholder for any necessary JavaScript functions like the original landing page had
+        function joinWhatsApp() {
+            // Replace with your actual WhatsApp group link
+            window.open('YOUR_WHATSAPP_GROUP_LINK_HERE', '_blank');
+        }
+    </script>
+</body>
+</html>
