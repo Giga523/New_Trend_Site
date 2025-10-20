@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" style="--secondary-color: #4fd1c7;">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הלוט היומי - צור קשר</title>
+    <style>
+        /* Existing CSS from the landing page, copied for consistency */
+        body {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #2d3748;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 253, 250, 0.95) 100%);
+            backdrop-filter: blur(15px);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(79, 209, 199, 0.15);
+            border-bottom: 1px solid rgba(79, 209, 199, 0.2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4fd1c7, #06b6d4, #3b82f6, #8b5cf6);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: logoGradient 3s ease infinite;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes logoGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background-size: 200% 200%;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            background: #f8fafc;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            width: 100%; /* Ensure footer spans full width */
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #4fd1c7;
+        }
+
+        /* --- Styles for Simple Contact Page --- */
+        .simple-contact-page {
+            /* Changed padding to min-height and added Flexbox properties for centering */
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding-top: 80px; /* Offset for the fixed header */
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto; /* Reset margin */
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(240, 253, 250, 0.95));
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(79, 209, 199, 0.2);
+            text-align: center;
+            width: 100%; /* Ensure it uses max-width correctly */
+        }
+
+        .contact-box h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #3b82f6;
+        }
+
+        .contact-box p {
+            font-size: 1.15rem;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background: #f8faff;
+            border-radius: 12px;
+        }
+
+        .contact-details div {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e293b;
+            text-align: right;
+            border-right: 3px solid #4fd1c7;
+            padding-right: 15px;
+            padding-left: 10px;
+        }
+
+        .contact-details a {
+            color: #3b82f6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 700;
+        }
+
+        .contact-details a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+        
+        .contact-details span {
+            margin-left: 8px;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body style="font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(248, 255, 254) 100%); color: rgb(30, 41, 59);">
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                הלוט היומי 🛍️
+            </div>
+            <a href="index.html" class="cta-button" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105);">
+                <span>חזרה לדף הבית</span> 
+                <span>🏠</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="simple-contact-page">
+            <div class="contact-box">
+                
+                <h1>איך ניתן להגיע אלינו?</h1>
+
+                <p>
+                    אנחנו זמינים לכל פנייה — טכנית, עסקית או סתם לשאול שאלה. 
+                    **אל תהססו לפנות**, ונשמח לעמוד לשירותכם.
+                </p>
+
+                <div class="contact-details">
+                    <div>
+                        <span>📧</span> דוא״ל: 
+                        <a href="mailto:info@halot-hayomi.com">**info@halot-hayomi.com**</a>
+                    </div>
+                    <div>
+                        <span>📞</span> טלפון: 
+                        <a href="tel:055-433-6016">**055-433-6016**</a>
+                    </div>
+                    <div>
+                        <span>💬</span> וואטסאפ: 
+                        <a href="https://wa.me/972554336016?text=היי,%20אני%20פונה%20אליכם%20מדף%20'צור%20קשר'%20באתר%20הלוט%20היומי" target="_blank">**לחצו כאן לשליחת הודעה**</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">דף הבית</a> 
+                <a href="/privacy.html">מדיניות פרטיות</a> 
+                <a href="/terms.html">תנאי שימוש</a> 
+                <a href="/contact.html">צור קשר</a> </div>
+        </div>
+    </footer>
+    <script>
+        function joinWhatsApp() {
+            // Replace with your actual WhatsApp group link
+            window.open('YOUR_WHATSAPP_GROUP_LINK_HERE', '_blank');
+        }
+    </script>
+</body>
+</html>
