@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" style="--secondary-color: #4fd1c7;">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הלוט היומי - מדיניות פרטיות</title>
+    <style>
+        /* Existing CSS from the landing page, copied for consistency */
+        body {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #2d3748;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 253, 250, 0.95) 100%);
+            backdrop-filter: blur(15px);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(79, 209, 199, 0.15);
+            border-bottom: 1px solid rgba(79, 209, 199, 0.2);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4fd1c7, #06b6d4, #3b82f6, #8b5cf6);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: logoGradient 3s ease infinite;
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes logoGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            background-size: 200% 200%;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            background: #f8fafc;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #4fd1c7;
+        }
+
+        /* --- New styles for Privacy Policy content page (same as T&C) --- */
+        .terms-page {
+            padding: 100px 0 80px; /* Adjust padding for fixed header */
+            background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+            min-height: 100vh;
+        }
+
+        .terms-page h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #1e293b;
+            border-bottom: 3px solid var(--secondary-color, #4fd1c7);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .terms-page h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #334155;
+            padding-right: 10px;
+            border-right: 4px solid var(--secondary-color, #4fd1c7);
+        }
+
+        .terms-page p, .terms-page ul {
+            margin-bottom: 20px;
+            color: #475569;
+            font-size: 1rem;
+        }
+
+        .terms-page ul {
+            list-style: none;
+            padding-right: 20px;
+        }
+
+        .terms-page ul li::before {
+            content: "•";
+            color: var(--secondary-color, #4fd1c7);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+            margin-left: 10px;
+        }
+
+        .disclaimer {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #f093fb;
+            background-color: #fef0fd;
+            border-radius: 8px;
+            color: #9c0f99;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+<body style="font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(248, 255, 254) 100%); color: rgb(30, 41, 59);">
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                הלוט היומי 🛍️
+            </div>
+            <a href="index.html" class="cta-button" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105);">
+                <span>חזרה לדף הבית</span> 
+                <span>🏠</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="terms-page">
+            <div class="container">
+                <h1>מדיניות פרטיות עבור "הלוט היומי"</h1>
+                <p>מדיניות פרטיות זו מסבירה כיצד "הלוט היומי" (להלן: **"אנחנו"** או **"השירות"**) אוספת, משתמשת, שומרת ומגנה על המידע האישי של המשתמשים שלנו, הן באתר והן בקבוצות הווטסאפ.</p>
+                <p>השימוש בשירות מהווה **הסכמה** למדיניות פרטיות זו.</p>
+
+                <h2>1. איזה מידע אנחנו אוספים?</h2>
+                <p>אנחנו אוספים שני סוגי מידע:</p>
+                
+                <h3>א. מידע לא אישי (נאסף אוטומטית)</h3>
+                <p>זהו מידע סטטיסטי, שאינו מאפשר זיהוי אישי ישיר של המשתמש, ונאסף באופן אוטומטי בעת השימוש באתר (דף הנחיתה):</p>
+                <ul>
+                    <li>**נתוני שימוש:** כתובת IP, סוג הדפדפן, מערכת ההפעלה, הדפים בהם ביקרתם, משך השהייה באתר וזמני גישה.</li>
+                    <li>**קובצי Cookie:** אנו עשויים להשתמש ב"עוגיות" (Cookies) ושירותי צד שלישי כגון Google Analytics כדי לשפר את חוויית השימוש ולנתח את ביצועי האתר.</li>
+                    <li>**מידע על הקלקה:** נתונים על לחיצות על קישורי המוצרים המשותפים (לצורך מעקב שותפים).</li>
+                </ul>
+                
+                <h3>ב. מידע אישי (נמסר מרצון)</h3>
+                <ul>
+                    <li>**פרטי ווטסאפ:** כאשר אתם מצטרפים לקבוצת הווטסאפ שלנו, מספר הטלפון שלכם והשם/כינוי שלכם בווטסאפ (כפי שבחרתם להציג) הופכים גלויים למנהלי הקבוצה ולשאר חברי הקבוצה, בהתאם להגדרות הפרטיות שלכם בווטסאפ.</li>
+                </ul>
+
+                <h2>2. כיצד אנו משתמשים במידע?</h2>
+                <p>אנו משתמשים במידע שנאסף למטרות הבאות:</p>
+                <ul>
+                    <li>**תפעול השירות:** כדי לנהל את קבוצות הווטסאפ ולשלוח את עדכוני המוצרים היומיים (שימוש במספר הטלפון).</li>
+                    <li>**שיפור חוויית המשתמש:** כדי לנתח נתונים סטטיסטיים (כגון היכן גולשים לוחצים יותר) ולשפר את התוכן והמבנה של דף הנחיתה.</li>
+                    <li>**אבטחה והגנה:** כדי לאתר ולמנוע פעילות הונאה או פגיעה באתר.</li>
+                </ul>
+
+                <h2>3. שיתוף המידע עם צדדים שלישיים</h2>
+                <p>אנו לא מוכרים, סוחרים או משכירים את המידע האישי שלכם לצדדים שלישיים, למעט במקרים הבאים:</p>
+                <ul>
+                    <li>**קישורי שותפים:** לחיצה על קישור מוצר מפנה אתכם לאתר צד שלישי (כגון AliExpress), שם מדיניות הפרטיות של אותו אתר היא הקובעת. אנו חולקים מידע בסיסי עם אותם אתרים (כגון קוד ההפניה שלנו) לצורך זיהוי עסקת השותפים.</li>
+                    <li>**דרישה חוקית:** אם נידרש לכך על פי חוק, צו בית משפט או רשות מוסמכת.</li>
+                </ul>
+
+                <h2>4. אבטחת מידע</h2>
+                <p>אנו מיישמים אמצעי אבטחה סבירים ומקובלים כדי להגן על המידע האישי שלכם מפני גישה, שימוש, שינוי או גילוי בלתי מורשים. עם זאת, אין שיטת שידור באינטרנט או שיטת אחסון אלקטרונית שהיא בטוחה ב-100%, ולכן איננו יכולים להתחייב לאבטחה מוחלטת.</p>
+                
+                <h2>5. מדיניות עוגיות (Cookies)</h2>
+                <p>האתר שלנו משתמש ב-Cookies כדי לאסוף מידע על אופן השימוש שלכם באתר. עוגיות הן קבצי טקסט קטנים המאוחסנים במכשיר שלכם. אתם יכולים לשלוט או למחוק עוגיות באמצעות הגדרות הדפדפן שלכם, אך ייתכן שהדבר יפגע בחוויית השימוש באתר.</p>
+                
+                <h2>6. קישורים לאתרים חיצוניים</h2>
+                <p>השירות כולל קישורים לאתרים של צדדים שלישיים (כגון AliExpress). אנחנו לא אחראים למדיניות הפרטיות או לתוכן של אתרים אלה. אנו ממליצים לכם לקרוא את מדיניות הפרטיות של כל אתר חיצוני אליו אתם עוברים.</p>
+
+                <h2>7. זכויות המשתמשים</h2>
+                <p>על פי חוק, עומדות לרשותכם הזכויות הבאות ביחס למידע האישי שלכם (ככל שקיים במאגרים שלנו):</p>
+                <ul>
+                    <li>**זכות עיון:** הזכות לעיין במידע שנאסף עליכם.</li>
+                    <li>**זכות תיקון ומחיקה:** הזכות לבקש תיקון או מחיקה של מידע שאינו נכון או שאינו נחוץ עוד.</li>
+                    <li>**הסרה מרשימת תפוצה:** ניתן לצאת מקבוצת הווטסאפ בכל עת על ידי לחיצה על "צא מהקבוצה" באפליקציה שלכם.</li>
+                </ul>
+
+                <h2>8. שינויים במדיניות הפרטיות</h2>
+                <p>אנו שומרים לעצמנו את הזכות לעדכן את מדיניות פרטיות זו מעת לעת. אנו ממליצים לבדוק דף זה באופן קבוע כדי להתעדכן בשינויים. שימושכם המתמשך בשירות לאחר פרסום השינויים יהווה את הסכמתכם למדיניות המתוקנת.</p>
+                
+                <h2>9. צרו קשר</h2>
+                <p>בכל שאלה בנוגע למדיניות פרטיות זו, אנא פנו למנהלי "הלוט היומי" באמצעות ערוצי הקשר המופיעים בדף הבית.</p>
+                
+                <p style="text-align: center; margin-top: 50px; font-style: italic; color: #64748b;">
+                    עדכון אחרון: אוקטובר 2025.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">דף הבית</a> 
+                <a href="/privacy.html">מדיניות פרטיות</a> <a href="/terms.html">תנאי שימוש</a> <a href="contact.html">צור קשר</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function joinWhatsApp() {
+            // Placeholder for the WhatsApp link
+            window.open('YOUR_WHATSAPP_GROUP_LINK_HERE', '_blank');
+        }
+    </script>
+</body>
+</html>
