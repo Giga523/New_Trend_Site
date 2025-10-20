@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>קהילת WhatsApp - מוצרים טרנדיים מ-AliExpress</title>
+  <title>הלוט היומי - קבוצת הטרנדים</title>
   <script src="a_data_002/element_sdk.js"></script>
   <style>
         body {
@@ -124,12 +124,9 @@
         }
 
         .hero-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            text-align: center;
         }
 
         .hero-text h1 {
@@ -339,9 +336,12 @@
         }
 
         .showcase-grid {
+            width: 100%;
+            max-width: 1100px;      /* adjust to taste */
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
+            margin: 0 auto;  
         }
 
         .showcase-card {
@@ -639,6 +639,7 @@
                 padding: 0 15px;
             }
         }
+        
     </style>
   <style>@view-transition { navigation: auto; }</style>
   <script src="a_data_002/data_sdk.js" type="text/javascript"></script>
@@ -648,7 +649,7 @@
   <header class="header">
    <nav class="nav container">
     <div class="logo">
-     🛍️ טרנדים חמים
+     הלוט היומי 🛍️
     </div><button class="cta-button" onclick="joinWhatsApp()" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105));"> <span>הצטרפו לקבוצה</span> <span>📱</span> </button>
    </nav>
   </header>
@@ -658,48 +659,27 @@
      <div class="hero-content">
       <div class="hero-text">
        <h1 id="hero-title" style="font-size: 35.2px;">גלו את המוצרים הכי חמים מ-AliExpress</h1>
-       <p id="hero-subtitle" style="font-size: 20px;">קהילת WhatsApp בלעדית עם מוצרים טרנדיים, מגניבים ויוצאי דופן שתרצו להכיר</p><button class="cta-button" onclick="joinWhatsApp()" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105));"> <span id="cta-text">הצטרפו לקבוצת WhatsApp</span> <span>🚀</span> </button>
-      </div>
-      <div class="hero-visual">
-       <div class="product-card">
-        <div class="product-icon">
-         🏠
-        </div>
-        <h4>עיצוב הבית</h4>
-       </div>
-       <div class="product-card">
-        <div class="product-icon">
-         📱
-        </div>
-        <h4>גאדג'טים חכמים</h4>
-       </div>
-       <div class="product-card">
-        <div class="product-icon">
-         👕
-        </div>
-        <h4>אופנה ייחודית</h4>
-       </div>
-       <div class="product-card">
-        <div class="product-icon">
-         🍳
-        </div>
-        <h4>כלי מטבח</h4>
-       </div>
-       <div class="product-card">
-        <div class="product-icon">
-         🎮
-        </div>
-        <h4>משחקים וכיף</h4>
-       </div>
-       <div class="product-card">
-        <div class="product-icon">
-         ✈️
-        </div>
-        <h4>אביזרי נסיעות</h4>
-       </div>
-      </div>
-     </div>
+       <h2 style="font-size: 2em; color: #333; font-weight: bold; border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 20px;">
+        ברוכים הבאים - כל הטרנדים הכי חמים, במקום אחד!
+    </h2>
+
+    <p style="font-size: 1.1em; margin-bottom: 20px;">
+        אם אתם רוצים להיות <strong>הראשונים לדעת</strong> מהם הטרנדים, הגאדג'טים והפריטים <strong>הכי מדוברים</strong> ברשת ובעולם – הגעתם למקום הנכון. אנו מביאים לכם <strong>ישירות לוואטסאפ</strong> רק את הדברים שבאמת שווה לדעת.
+    </p>
+
+    <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+
+    <p style="display: block; font-size: 1.4em; font-weight: bold; margin: 25px 0; padding: 15px; background-color: #f0f8ff; color: #007bff; border-radius: 6px; border: 1px solid #b0d8ff; text-align: center;">
+        <span style="color: #ff5733; font-size: 1.1em;"></span> בעקבות ההצלחה של הקבוצה הקודמת, פתחנו קבוצה חדשה לגמרי!
+    </p>
+
+    <p style="font-size: 1.2em; text-align: center; margin-top: 30px;">
+        אל תפספסו! הצטרפו עכשיו לקבוצת הוואטסאפ החדשה.
+    </p>
+    
+       <button class="cta-button" onclick="joinWhatsApp()" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105));"> <span id="cta-text">הצטרפו לקבוצת WhatsApp</span> <span>🚀</span> </button>
     </div>
+      
    </section><!-- Showcase Section -->
    <section class="showcase">
     <div class="container">
@@ -810,18 +790,18 @@
      <div class="proof-badges">
       <div class="proof-badge">
        <div class="proof-number">
-        2,500+
+        +20
        </div>
        <div class="proof-label">
-        חברי קהילה
-       </div>
+        מוצרים חדשים בשבוע
+        </div>
       </div>
       <div class="proof-badge">
        <div class="proof-number">
-        50+
+        4.8
        </div>
        <div class="proof-label">
-        מוצרים בשבוע
+        דירוג ממוצע
        </div>
       </div>
       <div class="proof-badge">
@@ -838,7 +818,7 @@
    <section class="cta-section">
     <div class="container">
      <h2>מוכנים להצטרף?</h2>
-     <p>הצטרפו עכשיו לקהילה הכי חמה של מוצרים טרנדיים</p><button class="cta-button" onclick="joinWhatsApp()" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105));"> <span>הצטרפו לקבוצת WhatsApp</span> <span>🎉</span> </button>
+     <p>השקת הקבוצה החלה! הצטרפו עכשיו לקהילה הכי חמה של מוצרים טרנדיים ואיכותיים</p><button class="cta-button" onclick="joinWhatsApp()" style="background: linear-gradient(135deg, rgb(16, 185, 129), rgb(5, 150, 105));"> <span>הצטרפו לקבוצת WhatsApp</span> <span>🎉</span> </button>
     </div>
    </section>
   </main><!-- Sticky CTA for mobile -->
@@ -846,10 +826,7 @@
   </div><!-- Footer -->
   <footer class="footer">
    <div class="container">
-    <div class="footer-links"><a href="#about">אודות</a> <a href="#privacy">פרטיות</a> <a href="#terms">תנאי שימוש</a> <a href="#contact">צור קשר</a>
-    </div>
-    <div class="disclaimer" id="footer-disclaimer">אתר זה אינו קשור באופן רשמי ל-AliExpress. אנו קהילה עצמאית המשתפת המלצות על מוצרים.</div>
-   </div>
+    <div class="footer-links"><a href="privacy.html">מדיניות פרטיות</a> <a href="terms.html">תנאי שימוש</a> <a href="contact.html">צור קשר</a>
   </footer>
   <script>
         // Configuration object
@@ -1033,21 +1010,11 @@
 
         // WhatsApp join function
         function joinWhatsApp() {
-            // Create a custom modal instead of using alert
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 10000;
-                backdrop-filter: blur(5px);
-            `;
+                
+            const whatsappLink = "https://chat.whatsapp.com/GFcNuDkgJdZKLjtvko1zSB?mode=wwc";
+    
+    
+            window.open(whatsappLink, "_blank");
 
             const modalContent = document.createElement('div');
             modalContent.style.cssText = `
